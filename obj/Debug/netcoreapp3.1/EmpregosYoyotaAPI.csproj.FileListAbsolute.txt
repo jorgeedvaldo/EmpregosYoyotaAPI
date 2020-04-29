@@ -53,3 +53,4 @@ C:\NetCoreProjects\EmpregosYoyotaAPI\bin\Debug\netcoreapp3.1\MySqlConnector.dll
 C:\NetCoreProjects\EmpregosYoyotaAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\NetCoreProjects\EmpregosYoyotaAPI\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
 C:\NetCoreProjects\EmpregosYoyotaAPI\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
+C:\NetCoreProjects\EmpregosYoyotaAPI\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll

@@ -12,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using EmpregosYoyotaAPI.Context;
+using EmpregosYoyotaAPI.Repository;
 
 namespace EmpregosYoyotaAPI
 {
@@ -28,7 +29,7 @@ namespace EmpregosYoyotaAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
-
+            services.AddTransient<IJobRepository, JobRepository>();
             services.AddControllers();
         }
 

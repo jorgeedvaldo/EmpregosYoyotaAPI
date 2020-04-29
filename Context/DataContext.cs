@@ -10,6 +10,11 @@ namespace EmpregosYoyotaAPI.Context
         {
             
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<JobCategory>().HasKey(x => new {x.JobId, x.CategoryId});
+        }
        
         public DbSet<Category> Categories { get; set; }
         public DbSet<Job> Jobs { get; set; }

@@ -1,4 +1,5 @@
 using EmpregosYoyotaAPI.Models;
+using System.Collections.Generic;
 
 namespace EmpregosYoyotaAPI.Repository
 {

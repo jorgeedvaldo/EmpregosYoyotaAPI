@@ -1,4 +1,6 @@
 using System;
+using System.ComponentModel.DataAnnotations;
+
 namespace EmpregosYoyotaAPI.Models
 {
     public class JobCategory

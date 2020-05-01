@@ -17,6 +17,25 @@ namespace EmpregosYoyotaAPI.Repository
             this._Context = _Ctx;
         }
 
+        public void Add<T>(T entity) where T : class
+        {
+            _context.Add(entity);
+        }
+
+        public void Update<T>(T entity) where T : class
+        {
+            _context.Update(entity);
+        }
+
+        public void Delete<T>(T entity) where T : class
+        {
+            _context.Remove(entity);
+        }
+
+        public async Task<bool> SaveChangesAsync()
+        {
+            return (await _context.SaveChangesAsync()) > 0;
+        }
 
 
         public async Task<ActionResult<List<Job>>> GetAllJobs()

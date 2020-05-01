@@ -55,5 +55,12 @@ namespace EmpregosYoyotaAPI.Repository
                 .ToListAsync();
             return query;
         }
+
+        public async Task<ActionResult<List<Message>>> GetAllMessages()
+        {
+            var query = await _Context.Messages
+                .ToListAsync();
+            return query;
+        }
     }
 }

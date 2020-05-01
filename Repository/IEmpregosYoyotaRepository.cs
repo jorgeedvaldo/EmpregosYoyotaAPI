@@ -18,5 +18,7 @@ namespace EmpregosYoyotaAPI.Repository
 
         Task<ActionResult<List<Category>>> GetAllCategories();
         //Task<ActionResult<List<Job>>> GetCategoryById(int id);
+
+        Task<ActionResult<List<Message>>> GetAllMessages();
     }
 }

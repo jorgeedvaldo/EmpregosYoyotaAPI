@@ -47,6 +47,15 @@ namespace EmpregosYoyotaAPI.Repository
             return query;
         }
 
+        public async Task<ActionResult<Job>> GetJobById(int id)
+        {
+            var query = await _Context.Jobs
+                .Include(j => j.JobCategories)
+                    .ThenInclude(jc => jc.Category)
+                .FirstOrDefaultAsync(j => j.Id == id);
+            return query;
+        }
+
         public async Task<ActionResult<List<Category>>> GetAllCategories()
         {
             var query = await _Context.Categories
@@ -56,11 +65,14 @@ namespace EmpregosYoyotaAPI.Repository
             return query;
         }
 
-        public async Task<ActionResult<List<Message>>> GetAllMessages()
+        public async Task<ActionResult<Category>> GetCategoryById(int id)
         {
-            var query = await _Context.Messages
-                .ToListAsync();
+            var query = await _Context.Categories
+                .Include(c => c.JobCategories)
+                    .ThenInclude(jc => jc.Job)
+                .FirstOrDefaultAsync(j => j.Id == id);
             return query;
         }
+
     }
 }

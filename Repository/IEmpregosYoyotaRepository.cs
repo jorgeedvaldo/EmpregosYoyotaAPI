@@ -14,11 +14,11 @@ namespace EmpregosYoyotaAPI.Repository
         Task<bool> SaveChangesAsync();
 
         Task<ActionResult<List<Job>>> GetAllJobs();
-        //Task<ActionResult<List<Job>>> GetJobById(int id);
+        Task<ActionResult<Job>> GetJobById(int id);
 
         Task<ActionResult<List<Category>>> GetAllCategories();
-        //Task<ActionResult<List<Job>>> GetCategoryById(int id);
+        Task<ActionResult<Category>> GetCategoryById(int id);
 
-        Task<ActionResult<List<Message>>> GetAllMessages();
+        //Task<ActionResult<List<Message>>> GetAllMessages();
     }
 }

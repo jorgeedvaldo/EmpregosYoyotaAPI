@@ -19,22 +19,22 @@ namespace EmpregosYoyotaAPI.Repository
 
         public void Add<T>(T entity) where T : class
         {
-            _context.Add(entity);
+            _Context.Add(entity);
         }
 
         public void Update<T>(T entity) where T : class
         {
-            _context.Update(entity);
+            _Context.Update(entity);
         }
 
         public void Delete<T>(T entity) where T : class
         {
-            _context.Remove(entity);
+            _Context.Remove(entity);
         }
 
         public async Task<bool> SaveChangesAsync()
         {
-            return (await _context.SaveChangesAsync()) > 0;
+            return (await _Context.SaveChangesAsync()) > 0;
         }
 
 

@@ -29,7 +29,6 @@ namespace EmpregosYoyotaAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<DataContext>(options => options.UseMySql(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddTransient<IJobRepository, JobRepository>();
             services.AddTransient<IEmpregosYoyotaRepository, EmpregosYoyotaRepository>();
 
             services.AddControllers();

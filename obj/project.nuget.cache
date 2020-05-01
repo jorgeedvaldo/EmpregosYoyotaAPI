@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "5KCsGGZM59XHJ7Uwjc2O3qxKutNrZCCn7ZhSS4JvE3FOj1yJ/jTj4wZ8TJiR74bplaYAxsNOA8SQqz88inHFjg==",
+  "dgSpecHash": "GreqMq405kMPm/IlzNSeMW0ELnMYW8WdvCNYv8J3CysQBC93xBCAoLfSNEQxUYRubE4eSDXtPMRaNuMm4rXuwQ==",
   "success": true,
   "projectFilePath": "C:\\NetCoreProjects\\EmpregosYoyotaAPI\\EmpregosYoyotaAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\3.1.3\\microsoft.aspnetcore.jsonpatch.3.1.3.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\3.1.3\\microsoft.aspnetcore.mvc.newtonsoftjson.3.1.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
@@ -31,7 +33,8 @@
     "C:\\Users\\user\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\mysqlconnector\\0.61.0\\mysqlconnector.0.61.0.nupkg.sha512",
-    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\pomelo.entityframeworkcore.mysql\\3.1.1\\pomelo.entityframeworkcore.mysql.3.1.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\pomelo.jsonobject\\2.2.1\\pomelo.jsonobject.2.2.1.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",

@@ -9,23 +9,23 @@ using System.Threading.Tasks;
 namespace EmpregosYoyotaAPI.Controllers
 {
     [ApiController]
-    [Route("api/jobs")]
+    [Route("api/categories")]
 
-    public class JobController : ControllerBase
+    public class CategoryController : ControllerBase
     {
         private readonly IEmpregosYoyotaRepository _EmpregosYoyotaRepository;
 
-        public JobController(IEmpregosYoyotaRepository repo)
+        public CategoryController(IEmpregosYoyotaRepository repo)
         {
             _EmpregosYoyotaRepository = repo;
         }
 
         [HttpGet]
         [Route("")]
-        public async Task<ActionResult<List<Job>>> GetAll()
+        public async Task<ActionResult<List<Category>>> GetAll()
         {
-            var jobs = await _EmpregosYoyotaRepository.GetAllJobs();
-            return jobs;
+            var categories = await _EmpregosYoyotaRepository.GetAllCategories();
+            return categories;
         }
     }
 }
